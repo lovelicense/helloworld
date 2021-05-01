@@ -3,7 +3,7 @@ var winston = require("winston")
 var WFirehose = require('winston-firehose')
 var AWS = require("aws-sdk")
 
-AWS.config.update({region:"us-east-1"})
+AWS.config.update({region:"ap-northeast-1"})
 var cwevents = new AWS.CloudWatchEvents({apiVersion: "2015-10-07"})
 var cw = new AWS.CloudWatch({apiVersion: "2010-08-01"})
 
